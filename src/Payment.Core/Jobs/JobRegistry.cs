@@ -9,7 +9,7 @@ namespace Payment.Core.Jobs
         {
             var configurationProvider = new ConfigurationProvider();
 
-            Schedule<PaymentJob>().ToRunNow().AndEvery(1).Months().On(int.Parse(configurationProvider.PaymentFileExportDay)).At(8, 0);
+            Schedule<PaymentFileExportJob>().ToRunNow().AndEvery(1).Months().On(int.Parse(configurationProvider.PaymentFileExportDay)).At(8, 0);
         }
     }
 }

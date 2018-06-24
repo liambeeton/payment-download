@@ -4,6 +4,6 @@ namespace Payment.Core.FileSystem
 {
     public interface IDirectoryHandler
     {
-        DirectoryInfo Create(string path);
+        DirectoryInfo Create(string path, string identity);
     }
 }
