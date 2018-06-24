@@ -10,7 +10,9 @@ namespace Payment.Core.Queries
     {
         public IList<EmployeeSalary> Execute(ISession session)
         {
-            return session.Query<EmployeeSalary>("SELECT * FROM Employee INNER JOIN Salary ON Employee.Id = Salary.EmployeeId").ToList();
+            return session.Query<EmployeeSalary>("SELECT Employee.Id AS EmployeeId, Employee.FirstName, Employee.LastName, " +
+                                                 "Employee.EmployeeNumber, Salary.Amount AS Salary FROM Employee INNER JOIN " +
+                                                 "Salary ON Employee.Id = Salary.EmployeeId ORDER BY Employee.FirstName ASC").ToList();
         }
     }
 }

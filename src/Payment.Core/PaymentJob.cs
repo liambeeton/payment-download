@@ -15,15 +15,7 @@ namespace Payment.Core
 
         public void Execute()
         {
-            try
-            {
-                var salaries = _employeeSalaryService.GetAllEmployeeSalaries();
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine(ex);
-                throw;
-            }
+            var employeeSalaries = _employeeSalaryService.GetAllEmployeeSalaries();
         }
     }
 }
