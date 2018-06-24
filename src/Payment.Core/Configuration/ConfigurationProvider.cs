@@ -1,6 +1,6 @@
 ﻿using System.Configuration;
 
-namespace Payment.Core
+namespace Payment.Core.Configuration
 {
     public class ConfigurationProvider : IConfigurationProvider
     {

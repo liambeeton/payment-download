@@ -2,6 +2,7 @@
 using log4net.Config;
 using Ninject;
 using Payment.Core;
+using Payment.Core.Configuration;
 using Topshelf;
 using Topshelf.Logging;
 using Topshelf.Ninject;

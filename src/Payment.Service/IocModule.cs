@@ -1,6 +1,7 @@
 ﻿using System.Configuration;
 using Ninject.Modules;
 using Payment.Core;
+using Payment.Core.Configuration;
 using Payment.Core.Services;
 using Payment.Data;
 using Payment.Data.Dapper;

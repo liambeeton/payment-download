@@ -1,6 +1,6 @@
 ﻿using FluentScheduler;
 
-namespace Payment.Core
+namespace Payment.Core.Jobs
 {
     public class JobRegistry : Registry
     {

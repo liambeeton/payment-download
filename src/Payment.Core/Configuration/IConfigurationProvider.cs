@@ -1,4 +1,4 @@
-﻿namespace Payment.Core
+﻿namespace Payment.Core.Configuration
 {
     public interface IConfigurationProvider
     {

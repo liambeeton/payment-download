@@ -47,10 +47,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ConfigurationProvider.cs" />
-    <Compile Include="IConfigurationProvider.cs" />
-    <Compile Include="JobRegistry.cs" />
-    <Compile Include="PaymentJob.cs" />
+    <Compile Include="Configuration\ConfigurationProvider.cs" />
+    <Compile Include="Configuration\IConfigurationProvider.cs" />
+    <Compile Include="Jobs\JobRegistry.cs" />
+    <Compile Include="Jobs\PaymentJob.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Queries\GetAllEmployeeSalaries.cs" />
     <Compile Include="Services\EmployeeSalaryService.cs" />

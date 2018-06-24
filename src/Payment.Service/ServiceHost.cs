@@ -1,6 +1,7 @@
 ﻿using FluentScheduler;
 using Ninject;
 using Payment.Core;
+using Payment.Core.Jobs;
 using Topshelf.Logging;
 
 namespace Payment.Service

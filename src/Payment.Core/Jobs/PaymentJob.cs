@@ -1,8 +1,7 @@
-﻿using System;
-using FluentScheduler;
+﻿using FluentScheduler;
 using Payment.Core.Services;
 
-namespace Payment.Core
+namespace Payment.Core.Jobs
 {
     public class PaymentJob : IJob
     {
