@@ -1,25 +1,23 @@
-﻿namespace Payment.Service
+﻿using FluentScheduler;
+using Payment.Core;
+
+namespace Payment.Service
 {
     public class ServiceHost : IServiceHost
     {
-        public void Dispose()
-        {
-            throw new System.NotImplementedException();
-        }
-
         public void Start()
         {
-            throw new System.NotImplementedException();
+            JobManager.Initialize(new JobRegistry());
         }
 
         public void Stop()
         {
-            throw new System.NotImplementedException();
+            JobManager.Stop();
         }
 
         public void Shutdown()
         {
-            throw new System.NotImplementedException();
+            JobManager.StopAndBlock();
         }
     }
 }

@@ -1,8 +1,6 @@
-﻿using System;
-
-namespace Payment.Service
+﻿namespace Payment.Service
 {
-    public interface IServiceHost : IDisposable
+    public interface IServiceHost
     {
         void Start();
         void Stop();
