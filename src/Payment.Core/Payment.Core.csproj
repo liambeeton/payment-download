@@ -49,6 +49,8 @@
   <ItemGroup>
     <Compile Include="Configuration\ConfigurationProvider.cs" />
     <Compile Include="Configuration\IConfigurationProvider.cs" />
+    <Compile Include="FileSystem\IDirectoryHandler.cs" />
+    <Compile Include="FileSystem\DirectoryHandler.cs" />
     <Compile Include="Jobs\JobRegistry.cs" />
     <Compile Include="Jobs\PaymentJob.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

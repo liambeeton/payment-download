@@ -1,7 +1,7 @@
 ﻿using System.Configuration;
 using Ninject.Modules;
-using Payment.Core;
 using Payment.Core.Configuration;
+using Payment.Core.FileSystem;
 using Payment.Core.Services;
 using Payment.Data;
 using Payment.Data.Dapper;
@@ -19,6 +19,7 @@ namespace Payment.Service
             Bind<IDatabase>().To<Database>();
             Bind<IDapperContext>().To<DapperContext>();
             Bind<IEmployeeSalaryService>().To<EmployeeSalaryService>();
+            Bind<IDirectoryHandler>().To<DirectoryHandler>();
         }
     }
 }
