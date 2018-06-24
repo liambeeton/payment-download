@@ -6,14 +6,15 @@ using Payment.Core.Services;
 using Payment.Data;
 using Payment.Data.Dapper;
 using Payment.Data.Session;
+using Payment.Service.ServiceHost;
 
-namespace Payment.Service
+namespace Payment.Service.Ninject
 {
     public class IocModule : NinjectModule
     {
         public override void Load()
         {
-            Bind<IServiceHost>().To<ServiceHost>();
+            Bind<IServiceHost>().To<ServiceHost.ServiceHost>();
             Bind<IConfigurationProvider>().To<ConfigurationProvider>();
             Bind<ISession>().ToConstructor(x => new Session(ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString));
             Bind<IDatabase>().To<Database>();

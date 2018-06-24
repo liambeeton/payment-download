@@ -1,9 +1,10 @@
 ﻿using FluentScheduler;
 using Ninject;
 using Payment.Core.Jobs;
+using Payment.Service.Ninject;
 using Topshelf.Logging;
 
-namespace Payment.Service
+namespace Payment.Service.ServiceHost
 {
     public class ServiceHost : IServiceHost
     {

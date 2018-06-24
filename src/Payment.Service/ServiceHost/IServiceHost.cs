@@ -1,4 +1,4 @@
-﻿namespace Payment.Service
+﻿namespace Payment.Service.ServiceHost
 {
     public interface IServiceHost
     {

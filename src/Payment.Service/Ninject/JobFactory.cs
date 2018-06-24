@@ -1,7 +1,7 @@
 ﻿using FluentScheduler;
 using Ninject;
 
-namespace Payment.Service
+namespace Payment.Service.Ninject
 {
     public class JobFactory : IJobFactory
     {
