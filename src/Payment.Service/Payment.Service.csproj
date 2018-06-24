@@ -42,6 +42,7 @@
       <HintPath>packages\Ninject.3.2.2.0\lib\net45-full\Ninject.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -62,6 +63,7 @@
   <ItemGroup>
     <Compile Include="IocModule.cs" />
     <Compile Include="IServiceHost.cs" />
+    <Compile Include="JobFactory.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ServiceHost.cs" />
@@ -74,6 +76,10 @@
     <ProjectReference Include="..\Payment.Core\Payment.Core.csproj">
       <Project>{1D4D912D-0AAF-4022-9AC2-7B165AA4E84E}</Project>
       <Name>Payment.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Payment.Data\Payment.Data.csproj">
+      <Project>{DC6B4815-36B2-4DE3-90F4-65FE53B1EBE5}</Project>
+      <Name>Payment.Data</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

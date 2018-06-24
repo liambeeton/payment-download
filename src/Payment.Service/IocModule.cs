@@ -1,5 +1,10 @@
-﻿using Ninject.Modules;
+﻿using System.Configuration;
+using Ninject.Modules;
 using Payment.Core;
+using Payment.Core.Services;
+using Payment.Data;
+using Payment.Data.Dapper;
+using Payment.Data.Session;
 
 namespace Payment.Service
 {
@@ -7,8 +12,12 @@ namespace Payment.Service
     {
         public override void Load()
         {
-            Bind<IServiceHost>().To<ServiceHost>().InSingletonScope();
-            Bind<IConfigurationProvider>().To<ConfigurationProvider>().InSingletonScope();
+            Bind<IServiceHost>().To<ServiceHost>();
+            Bind<IConfigurationProvider>().To<ConfigurationProvider>();
+            Bind<ISession>().ToConstructor(x => new Session(ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString));
+            Bind<IDatabase>().To<Database>();
+            Bind<IDapperContext>().To<DapperContext>();
+            Bind<IEmployeeSalaryService>().To<EmployeeSalaryService>();
         }
     }
 }
