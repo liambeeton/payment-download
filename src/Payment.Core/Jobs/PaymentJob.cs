@@ -25,7 +25,7 @@ namespace Payment.Core.Jobs
         {
             var employeeSalaries = _employeeSalaryService.GetAllEmployeeSalaries();
 
-            var directory = _directoryHandler.Create(_configurationProvider.SecureFolderPath);
+            var directoryInfo = _directoryHandler.Create(_configurationProvider.SecureFolderPath);
         }
     }
 }

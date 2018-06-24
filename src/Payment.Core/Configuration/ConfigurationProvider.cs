@@ -6,5 +6,6 @@ namespace Payment.Core.Configuration
     {
         public string ServiceName => ConfigurationManager.AppSettings["ServiceName"];
         public string SecureFolderPath => ConfigurationManager.AppSettings["SecureFolderPath"];
+        public string PaymentFileExportDay => ConfigurationManager.AppSettings["PaymentFileExportDay"];
     }
 }

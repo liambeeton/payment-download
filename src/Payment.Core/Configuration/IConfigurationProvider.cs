@@ -4,5 +4,6 @@
     {
         string ServiceName { get; }
         string SecureFolderPath { get; }
+        string PaymentFileExportDay { get; }
     }
 }

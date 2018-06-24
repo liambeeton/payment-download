@@ -1,4 +1,5 @@
 ﻿using FluentScheduler;
+using Payment.Core.Configuration;
 
 namespace Payment.Core.Jobs
 {
@@ -6,7 +7,9 @@ namespace Payment.Core.Jobs
     {
         public JobRegistry()
         {
-            Schedule<PaymentJob>().ToRunNow().AndEvery(1).Months().On(24).At(3, 0);
+            var configurationProvider = new ConfigurationProvider();
+
+            Schedule<PaymentJob>().ToRunNow().AndEvery(1).Months().On(int.Parse(configurationProvider.PaymentFileExportDay)).At(8, 0);
         }
     }
 }
