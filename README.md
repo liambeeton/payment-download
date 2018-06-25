@@ -15,3 +15,16 @@ You have been task to design and developed the solution by extracting the data o
 * Solution & Technical Design artifacts
 * Identify any possible RISK in a matrix format
 * Developed a small export application. Please showcase how you would architect your solution even though it would be an overkill for such a simple solution. I’m looking for patterns and best practices knowledge. (Only if you have time)
+
+## Configuration Settings
+
+The App.config in the Windows Service project has the following settings which can be changed:
+
+```
+<appSettings>
+    <add key="ServiceName" value="PaymentService" />
+    <add key="SecureFolderPath" value="C:\HR-Payment\" />
+    <add key="PaymentFileExportDay" value="24" />
+    <add key="PaymentFilePathIdentity" value="WORKINGTREE\liambeeton" />
+</appSettings>
+```
