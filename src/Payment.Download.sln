@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27703.2035
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Payment.Service", "Payment.Service.csproj", "{64A75838-7E0C-4FB5-A09F-171066E73CCE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Payment.Service", "Payment.Service\Payment.Service.csproj", "{64A75838-7E0C-4FB5-A09F-171066E73CCE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Payment.Data", "..\Payment.Data\Payment.Data.csproj", "{DC6B4815-36B2-4DE3-90F4-65FE53B1EBE5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Payment.Data", "Payment.Data\Payment.Data.csproj", "{DC6B4815-36B2-4DE3-90F4-65FE53B1EBE5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Payment.Core", "..\Payment.Core\Payment.Core.csproj", "{1D4D912D-0AAF-4022-9AC2-7B165AA4E84E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Payment.Core", "Payment.Core\Payment.Core.csproj", "{1D4D912D-0AAF-4022-9AC2-7B165AA4E84E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Payment.Contracts", "..\Payment.Contracts\Payment.Contracts.csproj", "{8694EA6D-728D-42B0-A722-7B527DFA4F71}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Payment.Contracts", "Payment.Contracts\Payment.Contracts.csproj", "{8694EA6D-728D-42B0-A722-7B527DFA4F71}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
