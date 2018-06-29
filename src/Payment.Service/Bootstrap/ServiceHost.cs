@@ -4,7 +4,7 @@ using Payment.Core.Jobs;
 using Payment.Service.Ninject;
 using Topshelf.Logging;
 
-namespace Payment.Service.ServiceHost
+namespace Payment.Service.Bootstrap
 {
     public class ServiceHost : IServiceHost
     {

@@ -6,7 +6,7 @@ using Payment.Core.Services;
 using Payment.Data;
 using Payment.Data.Dapper;
 using Payment.Data.Session;
-using Payment.Service.ServiceHost;
+using Payment.Service.Bootstrap;
 
 namespace Payment.Service.Ninject
 {
@@ -14,7 +14,7 @@ namespace Payment.Service.Ninject
     {
         public override void Load()
         {
-            Bind<IServiceHost>().To<ServiceHost.ServiceHost>();
+            Bind<IServiceHost>().To<ServiceHost>();
             Bind<IConfigurationProvider>().To<ConfigurationProvider>();
             Bind<ISession>().ToConstructor(x => new Session(ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString));
             Bind<IDatabase>().To<Database>();

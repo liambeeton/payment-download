@@ -2,8 +2,8 @@
 using log4net.Config;
 using Ninject;
 using Payment.Core.Configuration;
+using Payment.Service.Bootstrap;
 using Payment.Service.Ninject;
-using Payment.Service.ServiceHost;
 using Topshelf;
 using Topshelf.Logging;
 using Topshelf.Ninject;
